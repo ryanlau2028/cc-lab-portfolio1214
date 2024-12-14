@@ -1,0 +1,120 @@
+body {
+    font-family: 'Consolas', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-size: 12px;
+  }
+  
+  /* 导航栏样式 */
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 60px; /* 增加左侧的空白 */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    padding: 5px 0;
+    transition: color 0.3s, opacity 0.3s;
+    margin-top: 5px;
+  }
+  
+  nav a:first-child {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: gray;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* 页面内容样式 */
+  .content {
+    margin-left: 280px;
+    margin-top: 30px;
+    padding: 20px;
+    display: none; /* 默认隐藏所有内容 */
+  }
+  
+  /* 显示“About”页面 */
+  .about {
+    display: block; /* 当点击"About"时显示该内容 */
+  }
+  
+  .p5js, .resume, .contact {
+    display: none;
+  }
+  
+  .content h1 {
+    font-size: 12px; /* 设置字体大小为50px */
+  }
+  
+  .content p {
+    font-size: 12px; /* 设置字体大小为50px */
+    line-height: 1.6; /* 调整行距，1.6 为正常行距 */
+  }
+  
+  .image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;  /* 自适应宽度 */
+    max-width: 600px; /* 设定一个最大宽度，防止过宽 */
+    margin: 0 auto;
+  }
+  
+  .content img.gif {
+    margin-top: 50px;
+    width: 1000px; /* 设置 GIF 宽度 */
+    height: auto; /* 保持 GIF 的纵横比 */
+  }
+  
+  .content img.gif2 {
+    margin-top: 0px;
+    width: 300px; /* 设置 GIF 宽度 */
+    height: auto; /* 保持 GIF 的纵横比 */
+  }
+  
+  .overlay-image {
+    position: fixed;  /* 固定位置，相对于整个浏览器窗口 */
+    top: 428px;  /* 距离页面顶部50px */
+    left: 840px;  /* 距离页面左侧100px */
+    width: 9%;  /* 图片宽度 */
+    height: 6%;  /* 图片高度 */
+    opacity: 1;  /* 完全不透明 */
+    z-index: 10;  /* 确保图片覆盖在其他内容上面 */
+  }
+
+
+ /*game */
+
+
+  
+  #p5-container {
+    margin-top: 50px;
+    margin-left: 10px;
+    display: fixed;
+    font-family: 'Silkscreen', sans-serif;
+  }
+  
+  
+
