@@ -2,98 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ryan Lau CClab Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  
+  <!-- 引入你的样式和字体 -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-
-
-
+  <!-- 其他 <link> 和 <script> 标签 -->
 </head>
 <body>
+  <!-- 导航栏 -->
   <nav>
-    <a href="#" class="active" onclick="showContent('home')">Ryan Lau</a>
-    <a href="#" onclick="showContent('about')">About</a>
-    <a href="#" onclick="showContent('p5js')">p5.js</a>
-    <a href="#" onclick="showContent('resume')">Resume</a>
-    <a href="#" onclick="showContent('contact')">Contact</a>
+    <a href="index.html" class="active">Ryan Lau</a>
+    <a href="about.html">About</a>
+    <a href="p5js.html">p5.js</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-  <div id="home" class="content">
-    <img src="assets/coding.gif" class="gif2" >
+  <!-- 内容区域 -->
+  <div class="content home">
+    <!-- 你的 GIF -->
+    <img src="assets/coding.gif" class="gif2">
   </div>
-
-  <div id="about" class="content">
-    <h1>Hello!</h1>
-    <p>I am a RIBA Part 1 certified architect, graduated from the University of Edinburgh,<br> with five years of experience in architectural design and projects.</p>
-    <p><br>I am proficient in software like AutoCAD, Photoshop, Rhino, and Revit, I excel in efficiently handling diverse design tasks.</p>
-    <p><br>Currently, I am pursuing a Master's in Design and Technology at Parsons. <br>This website is a summary of my CCLab course, showcasing a series of small projects I completed during the class.</p>
-
-    <img src="assets/ArtDesign_1920.gif" class="gif">
-    <img src="assets/technology.png" class="overlay-image">
-  </div>
-
-  <div id="p5js" class="content">
-   <h1>p5.js Section</h1>
-
-   <!-- 创建一个容器用于放置p5.js画布 -->
-   <main id="p5-container">
-     <!-- p5.js 画布将在这里渲染 -->
-   </main>
-
-   <!-- 加载 p5.js 脚本 -->
-   <script src="Game.js"></script>
- </div>
-
-
-  <div id="resume" class="content">
-    <h1>Resume Section</h1>
-    <p>This is the content for the Resume section.</p>
-  </div>
-
-  <div id="contact" class="content">
-    <h1>Contact Section</h1>
-    <p>This is the content for the Contact section.</p>
-  </div>
-
-  <script>
-    // 显示特定页面的内容
-    function showContent(page) {
-      // 隐藏所有页面内容
-      const pages = document.querySelectorAll('.content');
-      pages.forEach(content => {
-        content.style.display = 'none';
-      });
-
-      // 显示当前点击的页面
-      const activePage = document.getElementById(page);
-      if (activePage) {
-        activePage.style.display = 'block';
-      }
-
-      // 为点击的导航项添加活动样式
-      const navLinks = document.querySelectorAll('nav a');
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-      });
-
-      // 给当前点击的链接添加“active”类
-      const activeLink = Array.from(navLinks).find(link => link.textContent.toLowerCase() === page);
-      if (activeLink) {
-        activeLink.classList.add('active');
-      }
-    }
-
-    // 默认显示home页面
-    showContent('home');
-  </script>
 </body>
 </html>
+

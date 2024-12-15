@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>p5.js Projects - Ryan Lau CClab Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Luckiest+Guy&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Matemasie&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+  <!-- ...其他字体链接... -->
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav>
+    <a href="index.html">Ryan Lau</a>
+    <a href="about.html">About</a>
+    <a href="p5js.html" class="active">p5.js</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+
+    <!-- p5.js 子导航 -->
+    <div id="p5js-subnav" class="subnav">
+      <a href="project1.html">Lost and Found</a>
+      <a href="project2.html">Exquisite Corpse</a>
+      <a href="project3.html">Alternative Clock</a>
+      <a href="project4.html">Face Generator</a>
+      <a href="project5.html">Illusion</a>
+      <a href="project6.html">Weekday Sneezes</a>
+      <a href="project7.html">ccLab Simulator</a>
+    </div>
+  </nav>
+
+  <!-- 内容区域 -->
+  <div class="content">
+    <h1>ccLab Simulator</h1>
+    <p class="ppp"> When I received this assignment and saw the mention of seconds, the first thought that came to mind was "Mississippi." I often hear people use "Mississippi" to measure a second when counting. So, I thought of creating a Mississippi timer, where every second a "Mississippi" would randomly appear on the screen, and every minute the counter on the left would increase by one. It was relatively simple to implement — I made the word randomly appear somewhere on the right side of the screen each second, with random sizes and angles.
+
+        However, I quickly realized that it looked too monotonous, and after a while, the screen would get too crowded. So, I decided to make the font randomly switch between outline and filled styles. Additionally, I made it so that each new "Mississippi" would appear at 100% opacity, and then gradually fade out until it disappeared. To improve the aesthetic, I loaded some fonts, and in the end, it turned out quite well.</p>
+    
+
+    <main id="p5-container">
+        <script src="Game.js"></script>
+
+    
+ 
+
+  </div>
+</body>
+</html>

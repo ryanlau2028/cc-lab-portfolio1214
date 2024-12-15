@@ -17,7 +17,7 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 80px;
   }
   
   nav a {
@@ -29,7 +29,7 @@ body {
     margin-top: 5px;
   }
   
-  nav a:first-child {
+  nav > a:first-child {
     margin-top: 30px;
     margin-bottom: 30px;
     font-weight: bold;
@@ -53,7 +53,7 @@ body {
     margin-left: 280px;
     margin-top: 30px;
     padding: 20px;
-    display: none; /* 默认隐藏所有内容 */
+    /* 默认隐藏所有内容 */
   }
   
   /* 显示“About”页面 */
@@ -72,6 +72,16 @@ body {
   .content p {
     font-size: 12px; /* 设置字体大小为50px */
     line-height: 1.6; /* 调整行距，1.6 为正常行距 */
+    margin-right: 300px;
+  }
+
+  .content p.ppp {
+    font-size: 11px; /* 设置字体大小为50px */
+    line-height: 1.6; /* 调整行距，1.6 为正常行距 */
+    color: rgb(67, 67, 67);
+    margin-right: 200px;
+    
+    
   }
   
   .image-container {
@@ -108,13 +118,63 @@ body {
  /*game */
 
 
+ #p5js-subnav {
+  display: flex;  /* 使用 flexbox */
+  flex-direction: column;
+   
+  width: 120px;
+  height: auto;
+  margin-top: 10px;  /* 控制子导航的位置，上移 10px */
+  margin-left: 0px;  /* 你也可以调整左边的间距 */
+  margin-bottom: 20px;  /* 保留子导航的底部间距 */
+  position: relative;   /* 使它相对于 nav 定位 */
+  top: -10px;  /* 这个属性可以让子导航向上移动10px */
+ }
+
+
+ #p5js-subnav a {
+  display: flex;  /* 使用 flexbox */
+  flex-direction: column; 
+  font-size: 11px;
+  width: 120px;
+  height: auto ;/* 子项目垂直排列 */
+  margin-bottom: 10px;  /* 设置子导航的间距 */
+  margin-left: 90px;
+  line-height: 0.6;
+  position: relative;  
+  top: -80px;
+  color: rgb(69, 69, 69);
+ }
+
+ 
+ #p5js-subnav a.active {
+  font-weight: bold !important;          /* 加粗字体 */
+  font-size: 11px;            /* 增大字体大小 */
+  color: black;               /* 设置字体颜色为黑色 */
+        /* 防止转换为大写 */
+ }
+
+
+  
+  
+
+
+#p5js-subnav a:hover {
+  color: gray;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
   
   #p5-container {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-right: 100px;
     display: fixed;
-    font-family: 'Silkscreen', sans-serif;
+    font-family: 'Consolas', monospace;
   }
+
+  
+  
   
   
 
