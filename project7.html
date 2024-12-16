@@ -5,6 +5,8 @@
   <title>p5.js Projects - Ryan Lau CClab Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="icon" href="assets/ju.png" type="image/x-icon">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
@@ -18,18 +20,18 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
-  <!-- ...其他字体链接... -->
+  
 </head>
 <body>
-  <!-- 导航栏 -->
+  
   <nav>
-    <a href="index.html">Ryan Lau</a>
+    <a href="index.html">Ryan Liu</a>
     <a href="about.html">About</a>
     <a href="p5js.html" class="active">p5.js</a>
     <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
+    <a href="portfolio.html">Portfolio</a>
 
-    <!-- p5.js 子导航 -->
+    
     <div id="p5js-subnav" class="subnav">
       <a href="project1.html">Lost and Found</a>
       <a href="project2.html">Exquisite Corpse</a>
@@ -41,13 +43,17 @@
     </div>
   </nav>
 
-  <!-- 内容区域 -->
+ 
   <div class="content">
     <h1>ccLab Simulator</h1>
-    <p class="ppp"> When I received this assignment and saw the mention of seconds, the first thought that came to mind was "Mississippi." I often hear people use "Mississippi" to measure a second when counting. So, I thought of creating a Mississippi timer, where every second a "Mississippi" would randomly appear on the screen, and every minute the counter on the left would increase by one. It was relatively simple to implement — I made the word randomly appear somewhere on the right side of the screen each second, with random sizes and angles.
+    <p class="ppp"> This project is to create a game, and the content is open-ended. After reading the brief, I started trying to make demos for mini-games to gather inspiration – I created demos for a bouncing ball breaking bricks and a jumping ball avoiding obstacles. Then I tried to make these demos more visually appealing by uploading images to replace the bouncing ball and the jumping obstacle ball. I found the process of replacing the elements quite interesting, constantly experimenting with different elements to see them jump. Suddenly, I thought, why not turn this process of replacement into a game? This is when the idea for the cclab simulator came up – I want to create a pixel-style simulation of my game development process. I drew my workspace, and on the workspace, there’s my cat and various objects. By dragging them into my computer, I can replace the jumping ball or the life icon in the game. At the same time, the jumping obstacle game is still playable. The computer screen will also be the p5.js interface.
 
-        However, I quickly realized that it looked too monotonous, and after a while, the screen would get too crowded. So, I decided to make the font randomly switch between outline and filled styles. Additionally, I made it so that each new "Mississippi" would appear at 100% opacity, and then gradually fade out until it disappeared. To improve the aesthetic, I loaded some fonts, and in the end, it turned out quite well.</p>
-    
+      So, I started making the game. I used Photoshop to create various pixel elements and assembled my desk, then exported the draggable elements into separate layers. I set them up as draggable objects. On the computer screen, I created a canvas within a canvas to hold the main game. When I dragged a draggable object into that small canvas, I replaced the ball or life icon inside the game with the icon of the dragged object, and the draggable item would disappear and refresh at the original position. The cat I drew is my friend's cat named Orange, so when I dragged the little Orange cat in, the life icon would change to the icon of Orange (which might be a bit confusing if the cat turns into an orange).
+      
+      Then, I created the initial and ending screens for the game. The initial screen shows some instructions and details about the assignment. The ending screen appears after completing and submitting the assignment. The process of designing the screens went smoothly, but the only thing that caused me some struggle was ensuring the screens appeared in sequence without conflicts. I spent some time figuring out the display order of the pages. My solution was to divide them into separate layers and edit them individually, then write the logic for when they should appear at the beginning. This part was a bit complex, and I had to think it through, but I managed to organize everything well, which gave me a great sense of accomplishment.</p>
+
+
+    <p class="pp">* All pixel illustrations and elements, except for the lava lamp, were created and edited by myself. The lava lamp GIF was created by a user named 'purplepill' and posted on the Lospec website (https://lospec.com/gallery/purplepill/lava-lamp).</p>
 
     <main id="p5-container">
         <script src="Game.js"></script>

@@ -83,6 +83,15 @@ body {
     
     
   }
+
+  .content p.pp {
+    font-size: 11px; /* 设置字体大小为50px */
+    line-height: 1.6; /* 调整行距，1.6 为正常行距 */
+    color: rgb(44, 78, 132);
+    margin-right: 200px;
+    
+    
+  }
   
   .image-container {
     position: relative;
